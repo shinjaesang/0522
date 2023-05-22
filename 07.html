@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnEvent(){
+            var btnChange=document.getElementById("btnchange");
+            var btnOrigin=document.getElementById("btnOrigin");
+
+            btnChange.onclick=function(){
+                document.body.style.backgroundColor="yellow";
+            }
+            btnOrigin.onclick=function(){
+                document.body.style.backgroundColor="white";
+            }
+        }
+        // function changeBG(){
+        //     document.body.background="yellow";
+        // }
+        // function changeOrigin(){
+        //     document.body.background="blue";
+        // }
+    </script>
+</head>
+<body onload="btnEvent()">
+    <button id="btnchange">Click</button>
+    <button id="btnOrigin">Click</button>
+</body>
+</html>
