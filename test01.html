@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImage(event){
+            var imgElement = document.getElementById("imgFruit");
+            var path = event.target.value;
+            imgElement.src = path;
+            imgElement.width = 400;
+            imgElement.height = 350;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="radio" name="fruit" value="img/apple.jpg" onchange="changeImage(event)" checked>APPLE<br>
+        <input type="radio" name="fruit" value="img/pear.jpg" onchange="changeImage(event)">PEAR<br>
+        <input type="radio" name="fruit" value="img/kiwi.jpg" onchange="changeImage(event)">KIWI<br>
+        <input type="radio" name="fruit" value="img/orange.jpg" onchange="changeImage(event)">ORANGE<br>
+        <br>
+        <img id="imgFruit" src="img/apple.jpg">
+    </form>
+</body>
+</html>
